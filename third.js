@@ -4,13 +4,13 @@ function deleteInvalids(array){
     
     for(let arrayEle of array){
         if(typeof arrayEle === 'number' && !isNaN(arrayEle)){
-            freshArray.push(arrayEle)
+            freshArray.push(arrayEle);
         }
     }
 
     return freshArray;
 }
 
-let freshArr = deleteInvalids(['1' , {num:2} , NaN ])
+let freshArr = deleteInvalids(['1' , {num:2} , NaN, -8])
 
 console.log(freshArr)
